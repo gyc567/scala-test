@@ -11,5 +11,13 @@ object GreetingBubby {
     val now = new Date
     val df = getDateInstance(LONG, Locale.CHINA)
     println(df format now)
+    var rt=addOne(3)
+    println(rt)
+
+   // val three = addOne(2)
+    def three() = 1 + 2
+    println(three)
   }
+
+  def addOne(m: Int): Int = m + 1
 }
